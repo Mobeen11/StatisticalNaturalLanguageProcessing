@@ -1,3 +1,32 @@
+/*
+
+Its apply method implements the shingling from the lecture slides based on set semantics. It returns the ids of the shingles that have been found inside of the document.
+Its constructor takes the length of ths shingles.
+The jaccardSim method should return the jaccard similarity of the two given shingle sets.
+Example
+The document
+
+google is good
+has the following shingles with length 3
+
+"goo", "oog", "ogl", "gle", "le ", "e i", " is", "is ", "s g", " go", "ood"
+Since set semantics is used, the second occurence of "goo" is not added a second time to the list of shingles. If the shingles are simply assigned ids in the order in which they have been seen, the document would be represented by the following shingle ids (starting with 0):
+
+    0,     1,     2,     3,     4,     5,     6,     7,     8,     9,   10
+A second document
+
+gooses google
+would lead to the shingles
+
+"goo", "oos", "ose", "ses", "es ", "s g", " go", "oog", "ogl", "gle"
+and the ids
+
+    0,    11,    12,    13,    14,     8,     9,     1,     2,     3
+Their intersections is $\{0,1,2,3,7,8\}$ while their union is  $\{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14\}$. Therefore, their Jaccard similarity is $6/15 = 0.4$
+*/
+
+
+
 import java.util.Set;
 import java.util.List;
 import java.util.*;
