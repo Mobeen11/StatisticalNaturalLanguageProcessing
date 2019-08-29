@@ -83,21 +83,6 @@ public class JaccardSimilarity {
         // You may want to copy your solution from task 1
         
         // YOUR CODE HERE
-        
-//         Set<Integer> u = new HashSet<>(set1);
-//         Set<Integer> i = new HashSet<>(set1);
-        
-//         u.addAll(set2); // Union
-//         i.retainAll(set2); // Intersection
-        
-//         if (u.size() == 0 || i.size() == 0) {
-//             similarity = 0;
-//         } else {
-//             similarity = (float) i.size() / (float) u.size();
-//         }
-        
-//         similarity = (float) i.size() / (float) u.size();
-        
         float neumerator = Intersection(set1, set2).size();
         float denominator = Union(set1, set2).size();
         
