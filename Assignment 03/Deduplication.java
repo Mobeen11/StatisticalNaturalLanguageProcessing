@@ -1,6 +1,3 @@
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.function.Consumer;
-
 /**
  The constructor takes all parameters necessary for the deduplication process as it has been described in the lecture slides. (See the javadoc comment for a description of the parameters)
 The accept method will be called for each document exactly once. It should
@@ -22,6 +19,10 @@ should be used in the determineDuplicates method
 count the number of times it has been called to show that this whole deduplication approach needs much less comparisons than $n*(n-1) / 2$.
 
  */
+
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.Consumer;
+
 public class Duplicate {
     public int id1, id2;
     public Duplicate(int id1, int id2) {
