@@ -252,6 +252,11 @@ public class MultiLabelLearner {
     }
 }
 
+
+
+
+
+
 // This line should make sure that compile errors are directly identified when executing this cell
 // (the line itself does not produce any meaningful result)
 new MultiLabelLearner(new HashSet<>(Arrays.asList("good","bad")));
